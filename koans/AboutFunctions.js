@@ -106,6 +106,6 @@ describe("About Functions", function() {
       // An internal comment
       return a * b;
     };
-    expect(multiply(1,3).toString()).toBe('3');
+    expect(multiply.toString()).toBe('function (a, b) {\x0d\x0a      // An internal comment\x0d\x0a      return a * b;\x0d\x0a    }');
   });    
 });
